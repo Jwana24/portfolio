@@ -46,5 +46,16 @@
                 margin-bottom: 40px;
             }
         }
+        .ContainerContact{
+            @include flex(null, center, space-around);
+            margin-top: 25px;
+            height: 80px;
+            //border: 0.2px solid $lighter-grey;
+            background-color: rgba($main-color, .3);
+            @include radius(25px);
+            img{
+                width: 33px;
+            }
+        }
     }
 }

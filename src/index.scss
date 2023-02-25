@@ -5,6 +5,7 @@ $darker-grey: #2d3436;
 $yellow: #f9ca24;
 $orange: #fa983a;
 $blue: #2e86de;
+$green: #6ab04c;
 
 // --- MIXINS --- //
 @mixin flex($direction, $align, $justify) {
@@ -95,4 +96,5 @@ h2{
 }
 .block{
     display: block;
+    margin: 5px 0;
 }

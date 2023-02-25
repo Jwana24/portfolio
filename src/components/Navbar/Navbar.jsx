@@ -2,6 +2,7 @@
 import {
     Link
 } from "react-router-dom";
+import CV from '../../documents/CV-johanna-detrieux-developpeuse-reactjs.pdf';
 
 // scss
 import './Navbar.scss';
@@ -19,18 +20,17 @@ const Navbar = () => {
                     <Link to='/'>
                         Accueil
                     </Link>
-                    <Link to='/formations'>
+                    <Link to='/trainings'>
                         Formations
+                    </Link>
+                    <Link to='/experiences'>
+                        Expériences
                     </Link>
                     <Link to='/competences'>
                         Compétences
                     </Link>
-                    <Link to='/projects'>
-                        Projets
-                    </Link>
-                    <Link to='/contact'>
-                        Contact
-                    </Link>
+    
+                    <a href={CV} target="_blank">Mon CV</a>
                 </div>
             </div>
         </div>

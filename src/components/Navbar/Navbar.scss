@@ -14,21 +14,21 @@
             letter-spacing: 3px;
         }
         .Links{
+            @include flex(null, center, space-between);
+            margin: 0 50px;
             flex: 2;
+
             a{
                 position: relative;
-                padding-bottom: 7px;
                 color: white;
                 font-size: 13px;
                 font-weight: 900;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                &:not(:last-of-type){
-                    margin-right: 50px;
-                }
+
                 &::after{
                     position: absolute;
-                    bottom: 0;
+                    bottom: -7px;
                     left: 50%;
                     content: '';
                     width: 0;

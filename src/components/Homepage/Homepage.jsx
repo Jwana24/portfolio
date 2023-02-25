@@ -3,6 +3,9 @@ import Navbar from '../Navbar/Navbar';
 import Picture from '../../images/photo.jpg';
 import React from '../../images/react.png';
 import Node from '../../images/logo-node.png';
+import Github from '../../images/github.png';
+import Linkedin from '../../images/linkedin.png';
+import Email from '../../images/email.png';
 
 // scss
 import './Homepage.scss';
@@ -14,19 +17,18 @@ const Homepage = () => {
             <div className="Homepage">
                 <div className="Container">
                     <div className="ContainerPicture">
-                        <div className="ContainerName">Johanna Detrieux</div>
-                        <img className="Picture" src={Picture} alt="photo de Johanna" />
-                        <h1>Développeuse JavaScript fullstack</h1>
+                        <img className="Picture" src={Picture} alt="Picture of myself" />
+                        <h1>Développeuse React en full-remote</h1>
                         <div className="Logos">
-                            React
-                            <img className="LogoReact" src={React} alt="logo React" />
+                            ReactJS
+                            <img className="LogoReact" src={React} alt="Logo ReactJS" />
                             | Node
-                            <img className="LogoNode" src={Node} alt="logo NodeJS" />
+                            <img className="LogoNode" src={Node} alt="Logo NodeJS" />
                         </div>
                     </div>
                     <div className="ContainerText">
                         <div className="ContainerAbout">
-                            <h2>A propos</h2>
+                            <h2>À propos</h2>
                             <p>
                                 Je suis une personne très curieuse qui aime découvrir et apprendre de nouvelles choses.
                                 <span className="block">Étant organisée, rapide, efficace et polyvalente dans mon travail, je n'ai pas de
@@ -36,13 +38,31 @@ const Homepage = () => {
                         <div className="ContainerCareer">
                             <h2>Mon parcours</h2>
                             <p>
-                                Diplômée d'un BTS Communication depuis 2014, je possède 2 ans d'expérience dans ce domaine : j'ai travaillée
-                                en tant qu'Assistante de Communication à la Mairie de ma ville, ainsi qu'en tant que Chargée de Communication
-                                à l'Office de Tourisme du Grand Périgueux. <span className="block">J'ai réalisée deux formations qualifiantes,
-                                l'une en 2018 en développement client-serveur à l'AFPA de Brive, et l'autre en 2019 à l'AFPA de Boulazac en
-                                développement web et web mobile.</span> <span className="block">En 2020 j'ai réalisée une formation en
-                                développement web JavaScript-React-NodeJS à la Wild Code School de Bordeaux.</span>
+                                Diplômée d'un BTS Communication, je possède 2 ans d'expérience dans ce domaine.
+                                Dans le cadre d'une reconversion professionnelle, j'ai réalisé deux formations qualifiantes
+                                en développement client-serveur puis en web et web mobile.
+
+                                <span className="block">
+                                    J'ai participé ensuite à une formation en développement web spécialisée en JavaScript, notamment sur React et NodeJS
+                                    à la Wild Code School à Bordeaux.
+                                </span>
+                                
+                                <span className="block">
+                                    Depuis, j'ai approfondi mes connaissances lors de mes expériences professionnelles en me spécialisant sur la
+                                    bibliothèque ReactJS et son écosystème.
+                                </span>
                             </p>
+                        </div>
+                        <div className="ContainerContact">
+                            <a href="https://github.com/Jwana24" target="_blank">
+                                <img className="LogoGithub" src={Github} alt="Logo Github" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/johannadetrieux/" target="_blank">
+                                <img className="LogoLinkedin" src={Linkedin} alt="Logo LinkedIn" />
+                            </a>
+                            <a href="mailto:johanna.detrieux@gmail.com" target="_blank">
+                                <img className="Image email" src={Email} alt="Email image" />
+                            </a>
                         </div>
                     </div>
                 </div>

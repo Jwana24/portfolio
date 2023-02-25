@@ -23,12 +23,13 @@
                     }
                     > div{
                         &:not(.BulletImg){
-                            @include flex(null, null, space-between);
-                            flex-wrap: wrap;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            grid-auto-rows: minmax(100px, auto);
                             width: 80%;
                             margin: 0 auto;
                             > div{
-                                @include flex(column, null, flex-start);
                                 width: 190px;
                                 margin-top: 30px;
                             }
@@ -66,10 +67,10 @@
                         height: 50px;
                         img{
                             &:nth-child(1){
-                                width: 40px;
+                                width: 50px;
                             }
-                            &:nth-child(2){
-                                width: 75px;
+                            &:nth-child(3){
+                                width: 100px;
                             }
                         }
                     }
@@ -82,22 +83,24 @@
                         color: $yellow;
                     }
                     h3{
+                        margin-bottom: 10px;
                         &:not(:first-of-type){
                             padding-top: 30px;
                         }
                     }
                     p{
                         font-size: 13px;
+                        margin: 5px 0;
                     }
                     .BulletImg{
-                        top: 35%;
+                        top: 265px;
                         background-color: $yellow;
                     }
                 }
             }
             .BulletImg{
                 position: absolute;
-                top: 0%;
+                top: 0;
                 left: 50%;
                 @include flex(null, center, center);
                 width: 85px;
@@ -125,6 +128,9 @@
                         }
                         img{
                             width: 50px;
+                        }
+                        .LanguageItem {
+                            @include flex(null, center, null);
                         }
                     }
                     &.Design{

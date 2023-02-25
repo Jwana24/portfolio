@@ -2,15 +2,15 @@
 import Navbar from '../Navbar/Navbar';
 
 // scss
-import './Formations.scss';
+import './Experiences.scss';
 
-const Formations = () => {
+const Experiences = () => {
     return(
-        <div className="Formations">
+        <div className="Experiences">
             <Navbar />
-            <div className="ContainerFormations">
+            <div className="ContainerExperiences">
                 <div className="Container">
-                    <h1>Formations</h1>
+                    <h1>Expériences</h1>
                     
                 </div>
             </div>
@@ -18,4 +18,4 @@ const Formations = () => {
     )
 }
 
-export default Formations;
+export default Experiences;
