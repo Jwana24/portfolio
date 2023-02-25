@@ -1,0 +1,53 @@
+@import '../../index.scss';
+.Navbar{
+    @include flex(null, center, center);
+    height: 60px;
+    padding: 15px;
+    background-color: $main-color;
+    .Container{
+        @include flex(null, null, null);
+        .Name{
+            flex: 1;
+            font-family: 'MasterOfBreak';
+            font-size: 25px;
+            color: white;
+            letter-spacing: 3px;
+        }
+        .Links{
+            flex: 2;
+            a{
+                position: relative;
+                padding-bottom: 7px;
+                color: white;
+                font-size: 13px;
+                font-weight: 900;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                &:not(:last-of-type){
+                    margin-right: 50px;
+                }
+                &::after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    display: block;
+                    background: white;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    -ms-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                }
+                &:hover{
+                    &:after{
+                        width: 100%; 
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

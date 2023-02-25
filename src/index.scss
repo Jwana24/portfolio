@@ -1,0 +1,98 @@
+// --- VARIABLES --- //
+$main-color: #6a5e6e;
+$lighter-grey: #b2bec3;
+$darker-grey: #2d3436;
+$yellow: #f9ca24;
+$orange: #fa983a;
+$blue: #2e86de;
+
+// --- MIXINS --- //
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin radius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+@mixin filter($type) {
+    filter: $type();
+    -webkit-filter: $type();
+}
+
+// --- FONTS --- //
+@font-face {
+    font-family: 'MasterOfBreak';
+    src: url(./fonts/master_of_break.ttf);
+}
+
+// --- GENERAL --- //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $darker-grey;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+p{
+    line-height: 1.5;
+}
+h1, h2{
+    margin-bottom: 20px;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    position: relative;
+    padding-bottom: 7px;
+    font-size: 30px;
+    font-weight: 300;
+    &::after{
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 0.2px solid $lighter-grey;
+        z-index: -1;
+    }
+}
+
+.Container{
+    width: 1110px;
+    @include flex(null, null, center);
+}
+.Card{
+    width: 600px;
+    padding: 60px 35px;
+    background: #fff;
+    box-shadow: 6px 3px 19px 0 rgba(56, 64, 86, 0.2);
+    @include radius(25px);
+    &:not(:last-of-type){
+        margin-right: 20px;
+    }
+}
+.block{
+    display: block;
+}
