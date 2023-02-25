@@ -1,9 +1,8 @@
 // modules
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    BrowserRouter,
+    Routes,
+    Route
 } from "react-router-dom";
 
 // components
@@ -16,15 +15,13 @@ import './App.scss';
 
 const App = () => {
     return (
-        <Router>
-            <div>
-                <Switch>
-                    <Route exact path="/" component={Homepage} />
-                    <Route path="/competences" component={Skills} />
-                    <Route path="/formations" component={Formations} />
-                </Switch>
-            </div>
-        </Router>
+        <BrowserRouter>
+            <Routes>
+                <Route exact path="/" element={<Homepage />} />
+                <Route path="/competences" element={<Skills />} />
+                <Route path="/formations" element={<Formations />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
