@@ -25,6 +25,7 @@ const App = () => {
                 <Route path="/trainings" element={<Trainings />} />
                 <Route path="/experiences" element={<Experiences />} />
             </Routes>
+            <p className="Copyright">© Site portefolio réalisé par Johanna DETRIEUX</p>
         </BrowserRouter>
     );
 }

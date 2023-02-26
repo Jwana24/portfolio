@@ -5,6 +5,8 @@ $darker-grey: #2d3436;
 $yellow: #f9ca24;
 $orange: #fa983a;
 $blue: #2e86de;
+$light-blue: #7ed6df;
+$deep_purple: #30336b;
 $green: #6ab04c;
 
 // --- MIXINS --- //
@@ -38,15 +40,23 @@ $green: #6ab04c;
     padding: 0;
     box-sizing: border-box;
 }
-body {
+html{
+    height: 100vh;
+}
+body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $darker-grey;
+    height: 100%;
 }
-code {
+#root{
+    @include flex(column, null, space-between);
+    height: 100%;
+}
+code{
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
@@ -78,6 +88,10 @@ h2{
         border-top: 0.2px solid $lighter-grey;
         z-index: -1;
     }
+}
+h4{
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .Container{

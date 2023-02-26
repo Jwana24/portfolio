@@ -1,4 +1,5 @@
 // components
+import React from "react"
 import Navbar from '../Navbar/Navbar';
 import French from '../../images/french-flag.png';
 import English from '../../images/english-flag.png';
@@ -17,7 +18,7 @@ import JS from '../../images/js.png';
 import TS from '../../images/typescript.png';
 import PHP from '../../images/php.png';
 import Node from '../../images/node.png';
-import React from '../../images/react.png';
+import ReactImg from '../../images/react.png';
 import Redux from '../../images/redux.png';
 import Express from '../../images/express.png';
 import Symfony from '../../images/symfony.png';
@@ -55,7 +56,7 @@ const Skills = () => {
                             <div>
                                 <h3>Frameworks & Librairies</h3>
                                 <div className="Front">
-                                    <img src={React} alt="Logo ReactJS" />
+                                    <img src={ReactImg} alt="Logo ReactJS" />
                                     <img src={Redux} alt="Logo Redux" />
                                     <img src={Express} alt="Logo Express" />
                                 </div>
@@ -102,6 +103,7 @@ const Skills = () => {
                             <img src={WebDev} alt="Icon web development" />
                         </div>
                     </div>
+
                     <div className="ContainerCards">
                         <div className="Language Card">
                             <h2>Langages</h2>

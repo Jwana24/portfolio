@@ -1,7 +1,6 @@
 @import '../../index.scss';
 .Homepage{
     @include flex(null, center, center);
-    margin-top: 80px;
     .Container{
         .ContainerPicture{
             flex: 1;

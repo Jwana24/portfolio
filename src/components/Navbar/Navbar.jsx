@@ -1,7 +1,8 @@
 // modules
-import {
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// components
+import React from "react";
 import CV from '../../documents/CV-johanna-detrieux-developpeuse-reactjs.pdf';
 
 // scss

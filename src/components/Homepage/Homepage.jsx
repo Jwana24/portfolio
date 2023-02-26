@@ -1,7 +1,8 @@
 // components
+import React from "react";
 import Navbar from '../Navbar/Navbar';
 import Picture from '../../images/photo.jpg';
-import React from '../../images/react.png';
+import ReactImg from '../../images/react.png';
 import Node from '../../images/logo-node.png';
 import Github from '../../images/github.png';
 import Linkedin from '../../images/linkedin.png';
@@ -17,11 +18,11 @@ const Homepage = () => {
             <div className="Homepage">
                 <div className="Container">
                     <div className="ContainerPicture">
-                        <img className="Picture" src={Picture} alt="Picture of myself" />
+                        <img className="Picture" src={Picture} alt="Myself" />
                         <h1>Développeuse React en full-remote</h1>
                         <div className="Logos">
                             ReactJS
-                            <img className="LogoReact" src={React} alt="Logo ReactJS" />
+                            <img className="LogoReact" src={ReactImg} alt="Logo ReactJS" />
                             | Node
                             <img className="LogoNode" src={Node} alt="Logo NodeJS" />
                         </div>
@@ -54,14 +55,14 @@ const Homepage = () => {
                             </p>
                         </div>
                         <div className="ContainerContact">
-                            <a href="https://github.com/Jwana24" target="_blank">
+                            <a href="https://github.com/Jwana24" target="_blank" rel="noreferrer" >
                                 <img className="LogoGithub" src={Github} alt="Logo Github" />
                             </a>
-                            <a href="https://www.linkedin.com/in/johannadetrieux/" target="_blank">
+                            <a href="https://www.linkedin.com/in/johannadetrieux/" target="_blank" rel="noreferrer" >
                                 <img className="LogoLinkedin" src={Linkedin} alt="Logo LinkedIn" />
                             </a>
-                            <a href="mailto:johanna.detrieux@gmail.com" target="_blank">
-                                <img className="Image email" src={Email} alt="Email image" />
+                            <a href="mailto:johanna.detrieux@gmail.com" target="_blank" rel="noreferrer" >
+                                <img className="Image email" src={Email} alt="Email" />
                             </a>
                         </div>
                     </div>

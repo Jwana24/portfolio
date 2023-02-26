@@ -1,4 +1,5 @@
 // components
+import React from "react";
 import Navbar from '../Navbar/Navbar';
 import Graduate from "../../images/graduated.png";
 
@@ -14,7 +15,7 @@ const Trainings = () => {
                     <h1>Formations</h1>
                     <div className="Graduates Card">
                         <div className="BulletImg">
-                            <img src={Graduate} alt="" />
+                            <img src={Graduate} alt="Trainings icon" />
                         </div>
 
                         <div>
