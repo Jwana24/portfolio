@@ -11,14 +11,14 @@ const Trainings = () => {
         <div className="Trainings">
             <Navbar />
             <div className="ContainerTrainings">
-                <div className="Container">
+                <div className="Container ContainerType">
                     <h1>Formations</h1>
                     <div className="Graduates Card">
                         <div className="BulletImg">
                             <img src={Graduate} alt="Trainings icon" />
                         </div>
 
-                        <div>
+                        <div className="ContainerGrid">
                             <div>
                                 <h3>2020</h3>
                                 <div>

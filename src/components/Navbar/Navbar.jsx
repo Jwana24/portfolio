@@ -24,11 +24,11 @@ const Navbar = () => {
                     <Link to='/trainings'>
                         Formations
                     </Link>
-                    <Link to='/experiences'>
-                        Expériences
-                    </Link>
                     <Link to='/competences'>
                         Compétences
+                    </Link>
+                    <Link to='/experiences'>
+                        Expériences
                     </Link>
     
                     <a href={CV} target="_blank">Mon CV</a>

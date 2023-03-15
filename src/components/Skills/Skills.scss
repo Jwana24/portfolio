@@ -5,85 +5,33 @@
         margin-top: 80px;
         margin-bottom: 80px;
         .Container{
-            @include flex(column, null, center);
-            h1{
-                text-align: center;
-            }
             > div{
                 &:not(:last-of-type){
                     margin-bottom: 30px;
                 }
             }
             .Dev{
-                margin-top: 70px;
                 &.Card{
-                    width: 100%;
-                    img{
-                        width: 50px;
-                    }
                     > div{
-                        &:not(.BulletImg){
-                            display: grid;
-                            grid-template-columns: repeat(3, 1fr);
-                            grid-gap: 10px;
-                            grid-auto-rows: minmax(100px, auto);
-                            width: 80%;
-                            margin: 0 auto;
+                        &.ContainerGrid{
                             > div{
-                                width: 190px;
-                                margin-top: 30px;
+                                width: 225px;
                             }
                         }
                     }
                     .SGBD{
                         @include flex(null, center, null);
-                        img{
-                            &:nth-child(1){
-                                width: 40px;
-                            }
-                            &:nth-child(2){
-                                width: 60px;
-                            }
-                        }
                     }
-                    .Lang{
+                    .Lang, .Back, .Front{
                         height: 50px;
-                    }
-                    .LangPlus{
-                        img{
-                            width: 30px;
-                        }
-                    }
-                    .Back{
-                        height: 50px;
-                        img{
-                            &:nth-child(1){
-                                width: 65px;
-                            }
-                        }
                     }
                     .Front{
                         @include flex(null, center, null);
-                        height: 50px;
-                        img{
-                            &:nth-child(1){
-                                width: 50px;
-                            }
-                            &:nth-child(3){
-                                width: 100px;
-                            }
-                        }
-                    }
-                    .FrontPlus{
-                        img{
-                            width: 25px;
-                        }
                     }
                     h2{
                         color: $yellow;
                     }
                     h3{
-                        margin-bottom: 10px;
                         &:not(:first-of-type){
                             padding-top: 30px;
                         }
@@ -96,21 +44,6 @@
                         top: 265px;
                         background-color: $yellow;
                     }
-                }
-            }
-            .BulletImg{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                @include flex(null, center, center);
-                width: 85px;
-                height: 85px;
-                transform: translate(-50%, -50%);
-                background-color: white;
-                box-shadow: 6px 3px 19px 0 rgba(56, 64, 86, 0.2);
-                @include radius(50%);
-                img{
-                    width: 45px;
                 }
             }
             .ContainerCards{
@@ -126,9 +59,6 @@
                         .BulletImg{
                             background-color: $light-blue;
                         }
-                        img{
-                            width: 50px;
-                        }
                         .LanguageItem {
                             @include flex(null, center, null);
                         }
@@ -136,7 +66,6 @@
                     &.Design{
                         height: 250px;
                         img{
-                            width: 40px;
                             &:not(:last-of-type){
                                 margin-right: 10px;
                             }
@@ -147,11 +76,6 @@
                         .BulletImg{
                             background-color: $blue;
                         }
-                    }
-                }
-                h2{
-                    &::after{
-                        width: 36%;
                     }
                 }
             }

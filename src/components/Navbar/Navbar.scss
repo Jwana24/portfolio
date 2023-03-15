@@ -8,7 +8,7 @@
         @include flex(null, null, null);
         .Name{
             flex: 1;
-            font-family: 'MasterOfBreak';
+            font-family: 'MasterOfBreak', sans-serif;
             font-size: 25px;
             color: white;
             letter-spacing: 3px;

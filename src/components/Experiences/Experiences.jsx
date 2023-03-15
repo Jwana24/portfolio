@@ -37,7 +37,7 @@ const Experiences = () => {
         <div className="Experiences">
             <Navbar />
             <div className="ContainerExperiences">
-                <div className="Container">
+                <div className="Container ContainerType">
                     <h1>Expériences</h1>
                     <div className="Dev Card">
                         <h2>Développement</h2>

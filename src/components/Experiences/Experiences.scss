@@ -5,21 +5,10 @@
         margin-top: 80px;
         margin-bottom: 80px;
         .Container{
-            @include flex(column, null, center);
-            h1{
-                text-align: center;
-            }
             .Dev,
             .Communication{
-                margin-top: 70px;
                 h2{
                     color: $deep_purple;
-                }
-                &.Card {
-                    width: 100%;
-                    img {
-                        width: 50px;
-                    }
                 }
             }
             .Dev{
@@ -27,75 +16,50 @@
                     top: 265px;
                     background-color: $deep_purple;
                 }
+
                 .Integration,
                 .Dydu,
                 .Particeep{
                     @include flex(null, null, null);
                     flex-wrap: wrap;
                     img{
-                        &:not(.ChatbotImg){
-                            width: auto;
-                            height: 155px;
-                        }
-                        &:not(last-child){
-                            padding-right: 8px;
-                        }
-                        &.ChatbotImg{
-                            height: 155px;
-                            width: auto;
-                        }
+                        padding-right: 8px;
+                        width: auto;
+                        height: 155px;
                     }
                 }
+
                 .ContainerDevReact{
                     margin-bottom: 50px;
                     .Dydu{
                         margin-bottom: 30px;
                     }
                 }
-                h4{
-                    margin-bottom: 10px;
-                    margin-top: 10px;
-                }
             }
             .Communication{
-                //height: 250px;
                 position: relative;
+
                 img{
                     width: 40px;
                     &:not(:last-of-type){
                         margin-right: 10px;
                     }
                 }
+
                 h2{
                     color: $orange;
                 }
-                h3{
-                    margin-bottom: 10px;
-                }
+
                 .BulletImg{
                     background-color: $orange;
                 }
+
                 .Creations{
                     @include flex(null, null, space-between);
                     img{
                         width: auto;
                         height: 200px;
                     }
-                }
-            }
-            .BulletImg{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                @include flex(null, center, center);
-                width: 85px;
-                height: 85px;
-                transform: translate(-50%, -50%);
-                background-color: white;
-                box-shadow: 6px 3px 19px 0 rgba(56, 64, 86, 0.2);
-                @include radius(50%);
-                img{
-                    width: 45px;
                 }
             }
         }

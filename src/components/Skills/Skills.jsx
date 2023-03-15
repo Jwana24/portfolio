@@ -1,6 +1,7 @@
 // components
 import React from "react"
 import Navbar from '../Navbar/Navbar';
+// img
 import French from '../../images/french-flag.png';
 import English from '../../images/english-flag.png';
 import Photoshop from '../../images/photoshop.png';
@@ -14,7 +15,7 @@ import WebDev from '../../images/web-development.png';
 import VSC from '../../images/vsc.png';
 import SQL from '../../images/sql-server.png';
 import MySQL from '../../images/mysql.png';
-import JS from '../../images/js.png';
+import JS from '../../images/javascript.png';
 import TS from '../../images/typescript.png';
 import PHP from '../../images/php.png';
 import Node from '../../images/node.png';
@@ -36,66 +37,66 @@ const Skills = () => {
         <div className="Skills">
             <Navbar />
             <div className="ContainerSkills">
-                <div className="Container">
+                <div className="Container ContainerType">
                     <h1>Compétences</h1>
                     <div className="Dev Card">
                         <h2>Développement Web</h2>
-                        <div>
+                        <div className="ContainerGrid">
                             <div>
                                 <h3>Langages</h3>
                                 <div className="Lang">
-                                    <img src={JS} alt="Logo JavaScript" />
-                                    <img src={TS} alt="Logo TypeScript" />
+                                    <img src={JS} className="ImgMedium" alt="Logo JavaScript" />
+                                    <img src={TS} className="ImgMedium" alt="Logo TypeScript" />
                                 </div>
                                 <p>Ce que je peux faire :</p>
-                                <div className="LangPlus">
-                                    <img src={PHP} alt="Logo PHP" />
+                                <div>
+                                    <img src={PHP} className="ImgSmall" alt="Logo PHP" />
                                 </div>
                             </div>
     
                             <div>
                                 <h3>Frameworks & Librairies</h3>
                                 <div className="Front">
-                                    <img src={ReactImg} alt="Logo ReactJS" />
-                                    <img src={Redux} alt="Logo Redux" />
-                                    <img src={Express} alt="Logo Express" />
+                                    <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" />
+                                    <img src={Redux} className="ImgMedium" alt="Logo Redux" />
+                                    <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
                                 </div>
                                 <p>Ce que je peux faire :</p>
-                                <div className="FrontPlus">
-                                    <img src={MaterialUI} alt="Logo MaterialUI" />
-                                    <img src={Bootstrap} alt="Logo Bootstrap" />
-                                    <img src={Symfony} alt="Logo Symfony" />
+                                <div>
+                                    <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" />
+                                    <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" />
+                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" />
                                 </div>
                             </div>
     
                             <div>
                                 <h3>Éditeurs</h3>
                                 <div>
-                                    <img src={VSC} alt="Logo Visual Studio Code" />
-                                    <img src={Webstorm} alt="Logo Webstorm" />
+                                    <img src={VSC} className="ImgMedium" alt="Logo Visual Studio Code" />
+                                    <img src={Webstorm} className="ImgMedium" alt="Logo Webstorm" />
                                 </div>
                             </div>
 
                             <div>
                                 <h3>SGBD</h3>
                                 <div className="SGBD">
-                                    <img src={SQL} alt="Logo SQL" />
-                                    <img src={MySQL} alt="Logo MySQL" />
+                                    <img src={SQL} className="ImgMediumSmall" alt="Logo SQL" />
+                                    <img src={MySQL} className="ImgLarge" alt="Logo MySQL" />
                                 </div>
                             </div>
 
                             <div>
                                 <h3>Environnement Back-end</h3>
                                 <div className="Back">
-                                    <img src={Node} alt="Logo NodeJS" />
+                                    <img src={Node} className="ImgMediumLarge" alt="Logo NodeJS" />
                                 </div>
                             </div>
 
                             <div>
                                 <h3>Terminal</h3>
-                                <div className="">
-                                    <img src={Git} alt="Logo Git" />
-                                    <img src={Linux} alt="Logo Linux" />
+                                <div>
+                                    <img src={Git} className="ImgMedium" alt="Logo Git" />
+                                    <img src={Linux} className="ImgMedium" alt="Logo Linux" />
                                 </div>
                             </div>
                         </div>
@@ -108,11 +109,11 @@ const Skills = () => {
                         <div className="Language Card">
                             <h2>Langages</h2>
                             <div className={"LanguageItem"}>
-                                <img src={French} alt="French flag" />
+                                <img src={French} className="ImgMedium" alt="French flag" />
                                 Natif
                             </div>
                             <div className={"LanguageItem"}>
-                                <img src={English} alt="English flag" />
+                                <img src={English} className="ImgMedium" alt="English flag" />
                                 Certification TOEIC : B2 ( 780 pts )
                             </div>
                             
@@ -122,11 +123,11 @@ const Skills = () => {
                         </div>
                         <div className="Design Card">
                             <h2>Web Design</h2>
-                            <img src={Photoshop} alt="Logo Photoshop" />
-                            <img src={Indesign} alt="Logo Indesign" />
-                            <img src={Illustrator} alt="Logo Illustrator" />
-                            <img src={Adobexd} alt="Logo AdobeXD" />
-                            <img src={Zeplin} alt="Logo Zeplin" />
+                            <img src={Photoshop} className="ImgMediumSmall" alt="Logo Photoshop" />
+                            <img src={Indesign} className="ImgMediumSmall" alt="Logo Indesign" />
+                            <img src={Illustrator} className="ImgMediumSmall" alt="Logo Illustrator" />
+                            <img src={Adobexd} className="ImgMediumSmall" alt="Logo AdobeXD" />
+                            <img src={Zeplin} className="ImgMediumSmall" alt="Logo Zeplin" />
                             <div className="BulletImg">
                                 <img src={WebDesign} alt="Icon web design" />
                             </div>

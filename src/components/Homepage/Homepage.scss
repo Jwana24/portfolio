@@ -7,16 +7,11 @@
             max-width: 330px;
             height: 330px;
             margin-right: 60px;
-            .ContainerName{
-                margin-bottom: 10px;
-                font-family: 'MasterOfBreak';
-                text-align: center;
-                font-size: 30px;
-                letter-spacing: 3px;
-            }
+
             h1{
                 text-align: center;
             }
+
             img{
                 &.Picture{
                     width: 100%;
@@ -26,6 +21,7 @@
                     border: 5px solid $main-color;
                 }
             }
+
             .Logos{
                 @include flex(null, center, center);
                 .LogoReact{
@@ -39,8 +35,7 @@
         }
         .ContainerText{
             flex: 2;
-            padding: 30px;
-            padding-top: 0;
+            padding: 0 30px 30px 30px;
             .ContainerAbout{
                 margin-bottom: 40px;
             }
@@ -49,7 +44,6 @@
             @include flex(null, center, space-around);
             margin-top: 25px;
             height: 80px;
-            //border: 0.2px solid $lighter-grey;
             background-color: rgba($main-color, .3);
             @include radius(25px);
             img{

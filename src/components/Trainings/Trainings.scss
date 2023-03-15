@@ -5,28 +5,14 @@
         margin-top: 80px;
         margin-bottom: 80px;
         .Container{
-            @include flex(column, null, center);
-            h1{
-                text-align: center;
-            }
             .Graduates {
-                margin-top: 70px;
                 &.Card {
-                    width: 100%;
-                    img {
-                        width: 50px;
-                    }
                     > div{
-                        &:not(.BulletImg){
-                            display: grid;
-                            grid-template-columns: repeat(3, 1fr);
-                            grid-gap: 10px;
-                            grid-auto-rows: minmax(100px, auto);
+                        &.ContainerGrid{
                             width: 80%;
                             margin: 0 auto;
                             > div{
                                 width: 250px;
-                                margin-top: 30px;
                             }
                         }
                     }
@@ -34,21 +20,6 @@
                         top: 265px;
                         background-color: $green;
                     }
-                }
-            }
-            .BulletImg{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                @include flex(null, center, center);
-                width: 85px;
-                height: 85px;
-                transform: translate(-50%, -50%);
-                background-color: white;
-                box-shadow: 6px 3px 19px 0 rgba(56, 64, 86, 0.2);
-                @include radius(50%);
-                img{
-                    width: 45px;
                 }
             }
         }
