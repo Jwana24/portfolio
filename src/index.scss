@@ -42,8 +42,10 @@ $green: #6ab04c;
 }
 html{
     height: 100vh;
+    margin: 0;
 }
 body{
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
@@ -131,6 +133,7 @@ h4{
 
 .ContainerType{
     @include flex(column, null, center);
+    position: relative;
 
     h1{
         text-align: center;

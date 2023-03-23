@@ -1,5 +1,7 @@
-// components
+// modules
 import React from "react";
+
+// components
 import Navbar from '../Navbar/Navbar';
 import ZoomedImage from "../ZoomedImage";
 // --- Definima --- //

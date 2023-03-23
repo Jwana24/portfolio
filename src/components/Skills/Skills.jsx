@@ -1,7 +1,8 @@
+// modules
+import React from "react";
+
 // components
-import React from "react"
 import Navbar from '../Navbar/Navbar';
-// img
 import French from '../../images/french-flag.png';
 import English from '../../images/english-flag.png';
 import Photoshop from '../../images/photoshop.png';
