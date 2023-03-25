@@ -11,7 +11,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const [width, setWidth] = useState(window.innerWidth);
-    const isMobile = width <= 810;
+    const isMobile = width <= 1015;
     
     const handleWindowSizeChange = () => {
         setWidth(window.innerWidth);

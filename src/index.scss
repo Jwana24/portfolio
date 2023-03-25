@@ -101,25 +101,55 @@ h4{
 }
 
 .Container{
-    width: 1110px;
+    width: 310px;
     @include flex(null, null, center);
+    @media screen and (min-width: 325px) {
+        width: 350px;
+    }
+    @media screen and (min-width: 370px) {
+        width: 360px;
+    }
+    @media screen and (min-width: 410px) {
+        width: 400px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 755px;
+    }
+    @media screen and (min-width: 810px) {
+        width: 795px;
+    }
+    @media screen and (min-width: 830px) {
+        width: 820px;
+    }
+    @media screen and (min-width: 1015px) {
+        width: 1000px;
+    }
+    @media screen and (min-width: 1110px) {
+        width: 1110px;
+    }
 }
 .Card{
     width: 100%;
     margin-top: 70px;
-    padding: 60px 35px;
+    padding: 60px 15px;
     background: #fff;
     box-shadow: 6px 3px 19px 0 rgba(56, 64, 86, 0.2);
     @include radius(25px);
+    @media screen and (min-width: 410px) {
+        padding: 60px 35px;
+    }
     &:not(:last-of-type){
         margin-right: 20px;
     }
     > div{
         &.ContainerGrid{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+            @media screen and (min-width: 768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
             > div{
                 margin-top: 30px;
             }

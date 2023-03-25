@@ -115,7 +115,7 @@ const Skills = () => {
                             </div>
                             <div className={"LanguageItem"}>
                                 <img src={English} className="ImgMedium" alt="English flag" />
-                                Certification TOEIC : B2 ( 780 pts )
+                                Certification TOEIC : B2 (780 pts)
                             </div>
                             
                             <div className="BulletImg">

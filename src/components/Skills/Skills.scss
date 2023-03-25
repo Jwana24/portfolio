@@ -7,7 +7,9 @@
         .Container{
             > div{
                 &:not(:last-of-type){
-                    margin-bottom: 30px;
+                    @media screen and (min-width: 400px) {
+                        margin-bottom: 30px;
+                    }
                 }
             }
             .Dev{
@@ -47,8 +49,13 @@
                 }
             }
             .ContainerCards{
-                @include flex(null, null, space-between);
-                margin-top: 50px;
+                @include flex(column, null, space-between);
+                @media screen and (min-width: 400px) {
+                    margin-top: 50px;
+                }
+                @media screen and (min-width: 768px) {
+                    @include flex(row, null, space-between);
+                }
                 .Card{
                     position: relative;
                     &.Language{
