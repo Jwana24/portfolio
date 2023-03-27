@@ -11,6 +11,12 @@
                         &.ContainerGrid{
                             width: 80%;
                             margin: 0 auto;
+                            @media screen and (min-width: 768px) {
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                            @media screen and (min-width: 1024px) {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
                             > div{
                                 width: 250px;
                             }
