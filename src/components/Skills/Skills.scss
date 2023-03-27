@@ -2,8 +2,11 @@
 .Skills{
     .ContainerSkills{
         @include flex(null, center, center);
-        margin-top: 80px;
+        margin-top: 40px;
         margin-bottom: 80px;
+        @media screen and (min-width: 780px) {
+            margin-top: 80px;
+        }
         .Container{
             > div{
                 &:not(:last-of-type){

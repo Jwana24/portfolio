@@ -2,8 +2,11 @@
 .Experiences{
     .ContainerExperiences{
         @include flex(null, center, center);
-        margin-top: 80px;
+        margin-top: 40px;
         margin-bottom: 80px;
+        @media screen and (min-width: 780px) {
+            margin-top: 80px;
+        }
         .Container{
             .Dev,
             .Communication{
@@ -20,12 +23,18 @@
                 .Integration,
                 .Dydu,
                 .Particeep{
-                    @include flex(null, null, null);
+                    @include flex(null, null, center);
                     flex-wrap: wrap;
+                    @media screen and (min-width: 780px) {
+                        @include flex(null, null, start);
+                    }
                     img{
                         padding-right: 8px;
                         width: auto;
-                        height: 155px;
+                        height: 130px;
+                        @media screen and (min-width: 780px) {
+                            height: 155px;
+                        }
                     }
                 }
 
@@ -55,10 +64,18 @@
                 }
 
                 .Creations{
-                    @include flex(null, null, space-between);
+                    @include flex(null, null, center);
+                    flex-wrap: wrap;
+                    @media screen and (min-width: 780px) {
+                        @include flex(null, null, space-between);
+                    }
                     img{
                         width: auto;
                         height: 200px;
+                        margin-right: 10px;
+                        @media screen and (min-width: 780px) {
+                            margin-right: 0;
+                        }
                     }
                 }
             }
