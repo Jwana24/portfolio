@@ -75,12 +75,19 @@ h1, h2{
 }
 h1{
     font-weight: 900;
+    font-size: 25px;
+    @media screen and (min-width: 820px) {
+        font-size: 32px
+    }
 }
 h2{
     position: relative;
     padding-bottom: 7px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
+    @media screen and (min-width: 820px) {
+        font-size: 30px
+    }
     &::after{
         content:"";
         position: absolute;

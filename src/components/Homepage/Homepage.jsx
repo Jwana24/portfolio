@@ -18,7 +18,7 @@ const Homepage = () => {
         <>
             <Navbar />
             <div className="Homepage">
-                <div className="Container">
+                <div className="Container ContainerHomepage">
                     <div className="ContainerPicture">
                         <img className="Picture" src={Picture} alt="Myself" />
                         <h1>Développeuse React en full-remote</h1>
