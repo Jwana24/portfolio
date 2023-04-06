@@ -46,35 +46,35 @@ const Skills = () => {
                             <div>
                                 <h3>Langages</h3>
                                 <div className="Lang">
-                                    <img src={JS} className="ImgMedium" alt="Logo JavaScript" />
-                                    <img src={TS} className="ImgMedium" alt="Logo TypeScript" />
+                                    <img src={JS} className="ImgMedium" alt="Logo JavaScript" title="JavaScript" />
+                                    <img src={TS} className="ImgMedium" alt="Logo TypeScript" title="TypeScript" />
                                 </div>
                                 <p>Ce que je peux faire :</p>
                                 <div>
-                                    <img src={PHP} className="ImgSmall" alt="Logo PHP" />
+                                    <img src={PHP} className="ImgSmall" alt="Logo PHP" title="PHP" />
                                 </div>
                             </div>
     
                             <div>
                                 <h3>Frameworks & Librairies</h3>
                                 <div className="Front">
-                                    <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" />
-                                    <img src={Redux} className="ImgMedium" alt="Logo Redux" />
+                                    <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" title="React" />
+                                    <img src={Redux} className="ImgMedium" alt="Logo Redux" title="Redux" />
                                     <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
                                 </div>
                                 <p>Ce que je peux faire :</p>
                                 <div>
-                                    <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" />
-                                    <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" />
-                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" />
+                                    <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" title="MaterialUI" />
+                                    <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" title="Bootstrap" />
+                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
                                 </div>
                             </div>
     
                             <div>
                                 <h3>Éditeurs</h3>
                                 <div>
-                                    <img src={VSC} className="ImgMedium" alt="Logo Visual Studio Code" />
-                                    <img src={Webstorm} className="ImgMedium" alt="Logo Webstorm" />
+                                    <img src={VSC} className="ImgMedium" alt="Logo Visual Studio Code" title="Visual Studio Code" />
+                                    <img src={Webstorm} className="ImgMedium" alt="Logo Webstorm" title="Webstorm" />
                                 </div>
                             </div>
 
@@ -96,8 +96,8 @@ const Skills = () => {
                             <div>
                                 <h3>Terminal</h3>
                                 <div>
-                                    <img src={Git} className="ImgMedium" alt="Logo Git" />
-                                    <img src={Linux} className="ImgMedium" alt="Logo Linux" />
+                                    <img src={Git} className="ImgMedium" alt="Logo Git" title="Git" />
+                                    <img src={Linux} className="ImgMedium" alt="Logo Linux" title="Linux" />
                                 </div>
                             </div>
                         </div>
@@ -124,11 +124,11 @@ const Skills = () => {
                         </div>
                         <div className="Design Card">
                             <h2>Web Design</h2>
-                            <img src={Photoshop} className="ImgMediumSmall" alt="Logo Photoshop" />
-                            <img src={Indesign} className="ImgMediumSmall" alt="Logo Indesign" />
-                            <img src={Illustrator} className="ImgMediumSmall" alt="Logo Illustrator" />
-                            <img src={Adobexd} className="ImgMediumSmall" alt="Logo AdobeXD" />
-                            <img src={Zeplin} className="ImgMediumSmall" alt="Logo Zeplin" />
+                            <img src={Photoshop} className="ImgMediumSmall" alt="Logo Photoshop" title="Photoshop" />
+                            <img src={Indesign} className="ImgMediumSmall" alt="Logo Indesign" title="Indesign" />
+                            <img src={Illustrator} className="ImgMediumSmall" alt="Logo Illustrator" title="Illustrator" />
+                            <img src={Adobexd} className="ImgMediumSmall" alt="Logo AdobeXD" title="AdobeXD" />
+                            <img src={Zeplin} className="ImgMediumSmall" alt="Logo Zeplin" title="Zeplin" />
                             <div className="BulletImg">
                                 <img src={WebDesign} alt="Icon web design" />
                             </div>

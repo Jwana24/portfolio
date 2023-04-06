@@ -9,17 +9,43 @@
         }
         .Container{
             .Graduates {
+                .ContentTrainings {
+                    margin-top: 50px;
+                    .GroupTrainings {
+                        @include flex(column, null, null);
+                        &:not(:last-child) {
+                            margin-bottom: 30px;
+                        }
+                        @media screen and (min-width: 1024px) {
+                            display: grid;
+                            grid-template-columns: 10% 20% 70%;
+                            &:not(:last-child) {
+                                margin-bottom: 0;
+                                grid-template-rows: 100px;
+                            }
+                        }
+
+                        .YearAndLocation {
+                            @media screen and (min-width: 1024px) {
+                                border-right: 1px solid $lighter-grey;
+                                margin-right: 20px;
+                            }
+                            h3 {
+                                margin-bottom: 0;
+                                font-size: 25px;
+                            }
+                            h4 {
+                                margin-top: 0;
+                                opacity: .5;
+                            }
+                        }
+                    }
+                }
                 &.Card {
                     > div{
                         &.ContainerGrid{
                             width: 80%;
                             margin: 0 auto;
-                            @media screen and (min-width: 768px) {
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                            @media screen and (min-width: 1024px) {
-                                grid-template-columns: repeat(3, 1fr);
-                            }
                             > div{
                                 width: 250px;
                             }

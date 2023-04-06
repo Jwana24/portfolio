@@ -19,39 +19,59 @@ const Trainings = () => {
                         <div className="BulletImg">
                             <img src={Graduate} alt="Trainings icon" />
                         </div>
-
-                        <div className="ContainerGrid">
-                            <div>
-                                <h3>2020</h3>
+                        
+                        <div className="ContentTrainings">
+                            <div className="GroupTrainings">
+                                <div></div>
+                                <div className="YearAndLocation">
+                                    <h3>2020</h3>
+                                    <h4>Wild Code School</h4>
+                                </div>
                                 <div>
                                     <p>Formation web et web mobile JavaScript React & Node</p>
                                 </div>
                             </div>
-    
-                            <div>
-                                <h3>2019</h3>
+                            
+                            <div className="GroupTrainings">
+                                <div></div>
+                                <div className="YearAndLocation">
+                                    <h3>2019</h3>
+                                    <h4>AFPA</h4>
+                                </div>
                                 <div>
                                     <p>Certification developpement web et web mobile</p>
                                     <p>Certification TOEIC</p>
                                 </div>
                             </div>
-        
-                            <div>
-                                <h3>2018</h3>
+                            
+                            <div className="GroupTrainings">
+                                <div></div>
+                                <div className="YearAndLocation">
+                                    <h3>2018</h3>
+                                    <h4>AFPA</h4>
+                                </div>
                                 <div>
                                     <p>Certification développement client-serveur</p>
                                 </div>
                             </div>
-        
-                            <div>
-                                <h3>2014</h3>
+                            
+                            <div className="GroupTrainings">
+                                <div></div>
+                                <div className="YearAndLocation">
+                                    <h3>2014</h3>
+                                    <h4>Lycée Bernard Palissy</h4>
+                                </div>
                                 <div>
                                     <p>BTS Communication</p>
                                 </div>
                             </div>
-        
-                            <div>
-                                <h3>2011</h3>
+                            
+                            <div className="GroupTrainings">
+                                <div></div>
+                                <div className="YearAndLocation">
+                                    <h3>2011</h3>
+                                    <h4>Lycée Arnaud Daniel</h4>
+                                </div>
                                 <div>
                                     <p>Bac STG CGRH</p>
                                 </div>

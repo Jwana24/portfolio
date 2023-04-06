@@ -47,16 +47,27 @@ const Experiences = () => {
                             <img src={Dev} alt="Development icon" />
                         </div>
   
-                        <div>
-                            <div className="ContainerDevReact">
+                        <div className="ContainerDevReact">
+                            <div>
                                 <h3>Développement React (Redux / Typescript / Webpack / Styled component / MaterialUI / Formik)</h3>
                                 <h4>Particeep - septembre 2022 à aujourd'hui</h4>
+                                <p>
+                                    J'ai réalisé principalement du bug fix sur le nouveau design en React, sur le front office et le back office du projet qui concerne des
+                                    investissements financiers.
+                                </p>
+                                <p className="Worktime">👤 Travail en autonomie sur ce projet.</p>
                                 <div className="Particeep">
                                     <ZoomedImage src={Particeep} alt="Website Particeep" />
                                     <ZoomedImage src={Finstore} alt="Finstore Particeep" />
                                 </div>
     
                                 <h4>Dydu - juillet 2021 à juillet 2022</h4>
+                                <p>
+                                    J'ai réalisé des fonctionnalités et des bugs fix sur différentes chatbox (V1 en Angular et V2 en React), ainsi que sur l'outil de gestion
+                                    des chatbox.
+                                </p>
+                                <p className="Worktime">👤 Travail en autonomie sur ce projet.</p>
+                                <p className="Worktime">👥 Un peu de travail en pair-programming sur certaines features / bugs.</p>
                                 <div className="Dydu">
                                     <ZoomedImage src={Dydu} alt="Website Dydu" />
                                     <ZoomedImage src={Chatbot} alt="Chatbot Dydu" className="ChatbotImg" />
@@ -65,6 +76,11 @@ const Experiences = () => {
 
                             <h3>Intégration et développement PHP (Bolt / Prestashop / Symfony)</h3>
                             <h4>Definima - août 2020 à août 2021</h4>
+                            <p className="Worktime">👤 Travail en autonomie sur les sites : Iming, Central Sono, Symbiose Club.</p>
+                            <p className="Worktime">
+                                👥 Travail en équipe avec d'autres développeurs (backend - frontend) sur les sites : Definima, Locaway, RCommerce, Placéco
+                                et LaDégust.
+                            </p>
                             <div className="Integration">
                                 <ZoomedImage src={Definima} alt="Website Definima" />
                                 <ZoomedImage src={Locaway} alt="Website Locaway" />

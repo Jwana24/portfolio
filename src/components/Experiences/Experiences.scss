@@ -20,6 +20,32 @@
                     background-color: $deep_purple;
                 }
 
+                .ContainerDevReact{
+                    h3{
+                        margin-bottom: 15px;
+                    }
+                    h4{
+                        text-transform: uppercase;
+                        opacity: .5;
+                        font-weight: 700;
+                    }
+                    p{
+                        margin-bottom: 5px;
+                        &.Worktime{
+                            font-size: 13px;
+                        }
+                    }
+                    > div{
+                        margin-bottom: 50px;
+                    }
+                    .Particeep{
+                        margin-bottom: 40px;
+                    }
+                    .Dydu{
+                        margin-bottom: 30px;
+                    }
+                }
+
                 .Integration,
                 .Dydu,
                 .Particeep{
@@ -29,19 +55,15 @@
                         @include flex(null, null, start);
                     }
                     img{
-                        padding-right: 8px;
                         width: auto;
                         height: 130px;
+                        margin-right: 8px;
+                        padding: 1px;
+                        border: 1px solid $light-grey;
+                        @include radius(3px);
                         @media screen and (min-width: 780px) {
                             height: 155px;
                         }
-                    }
-                }
-
-                .ContainerDevReact{
-                    margin-bottom: 50px;
-                    .Dydu{
-                        margin-bottom: 30px;
                     }
                 }
             }
