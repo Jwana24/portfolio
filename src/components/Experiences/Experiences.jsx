@@ -49,8 +49,8 @@ const Experiences = () => {
   
                         <div className="ContainerDevReact">
                             <div>
-                                <h3>Développement React (Redux / Typescript / Webpack / Styled component / MaterialUI / Formik)</h3>
-                                <h4>Particeep - septembre 2022 à aujourd'hui</h4>
+                                <h3>Développement React (Redux / Typescript / Webpack / Styled component / MaterialUI / Formik / React Hook Form)</h3>
+                                <h4>Particeep - septembre 2022 à mai 2023</h4>
                                 <p>
                                     J'ai réalisé principalement du bug fix sur le nouveau design en React, sur le front office et le back office du projet qui concerne des
                                     investissements financiers.
@@ -74,7 +74,7 @@ const Experiences = () => {
                                 </div>
                             </div>
 
-                            <h3>Intégration et développement PHP (Bolt / Prestashop / Symfony)</h3>
+                            <h3>Intégration et développement PHP (Bolt / Prestashop / Symfony / Twig / JavaScript / SCSS)</h3>
                             <h4>Definima - août 2020 à août 2021</h4>
                             <p className="Worktime">👤 Travail en autonomie sur les sites : Iming, Central Sono, Symbiose Club.</p>
                             <p className="Worktime">

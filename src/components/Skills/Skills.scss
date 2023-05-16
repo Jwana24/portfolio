@@ -30,8 +30,11 @@
                     .Lang, .Back, .Front{
                         height: 50px;
                     }
-                    .Front{
+                    .Front, .KnownFront{
                         @include flex(null, center, null);
+                        img:not(:last-child){
+                            margin-right: 4px;
+                        }
                     }
                     h2{
                         color: $yellow;

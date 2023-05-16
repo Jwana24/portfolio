@@ -19,6 +19,7 @@ import MySQL from '../../images/mysql.png';
 import JS from '../../images/javascript.png';
 import TS from '../../images/typescript.png';
 import PHP from '../../images/php.png';
+import Next from '../../images/nextjs.png';
 import Node from '../../images/node.png';
 import ReactImg from '../../images/react.png';
 import Redux from '../../images/redux.png';
@@ -29,6 +30,9 @@ import Git from '../../images/git.png';
 import Linux from '../../images/linux.png';
 import Webstorm from '../../images/webstorm.png';
 import MaterialUI from '../../images/materialui.png';
+import Tailwind from '../../images/tailwindcss.png';
+import Formik from '../../images/formik.png';
+import ReactHookForm from '../../images/reactHookForm.png';
 
 // scss
 import './Skills.scss';
@@ -49,7 +53,7 @@ const Skills = () => {
                                     <img src={JS} className="ImgMedium" alt="Logo JavaScript" title="JavaScript" />
                                     <img src={TS} className="ImgMedium" alt="Logo TypeScript" title="TypeScript" />
                                 </div>
-                                <p>Ce que je peux faire :</p>
+                                <p>Ce que je connais en + :</p>
                                 <div>
                                     <img src={PHP} className="ImgSmall" alt="Logo PHP" title="PHP" />
                                 </div>
@@ -59,14 +63,18 @@ const Skills = () => {
                                 <h3>Frameworks & Librairies</h3>
                                 <div className="Front">
                                     <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" title="React" />
-                                    <img src={Redux} className="ImgMedium" alt="Logo Redux" title="Redux" />
+                                    <img src={Redux} className="ImgMediumSmall" alt="Logo Redux" title="Redux" />
+                                    <img src={Next} className="ImgLarge" alt="Logo Next" title="NextJS" />
                                     <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
                                 </div>
-                                <p>Ce que je peux faire :</p>
-                                <div>
+                                <p>Ce que je connais en + :</p>
+                                <div className="KnownFront">
+                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
+                                    <img src={Formik} className="ImgExtraSmall" alt="Logo Formik" title="Formik" />
+                                    <img src={ReactHookForm} className="ImgExtraSmall" alt="Logo React Hook Form" title="React Hook Form" />
+                                    <img src={Tailwind} className="ImgLarge" alt="Logo TailwindCSS" title="TailwindCSS" />
                                     <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" title="MaterialUI" />
                                     <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" title="Bootstrap" />
-                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
                                 </div>
                             </div>
     
@@ -89,7 +97,7 @@ const Skills = () => {
                             <div>
                                 <h3>Environnement Back-end</h3>
                                 <div className="Back">
-                                    <img src={Node} className="ImgMediumLarge" alt="Logo NodeJS" />
+                                    <img src={Node} className="ImgLarge" alt="Logo NodeJS" />
                                 </div>
                             </div>
 

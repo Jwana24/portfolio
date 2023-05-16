@@ -52,7 +52,7 @@
                     @include flex(null, null, center);
                     flex-wrap: wrap;
                     @media screen and (min-width: 780px) {
-                        @include flex(null, null, start);
+                        @include flex(null, null, flex-start);
                     }
                     img{
                         width: auto;

@@ -29,7 +29,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="Navbar">
+        <nav className="Navbar">
             <div className="Container">
                 <div className="Name">
                     <Link to='/'>Johanna Detrieux</Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     <a href={CV} target="_blank" rel="noreferrer">Mon CV</a>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
