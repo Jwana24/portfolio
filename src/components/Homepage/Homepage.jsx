@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar';
 import Picture from '../../images/photo.jpg';
 import ReactImg from '../../images/react.png';
 import Node from '../../images/logo-node.png';
+import NextJS from '../../images/nextjs.png';
 import Github from '../../images/github.png';
 import Linkedin from '../../images/linkedin.png';
 import Email from '../../images/email.png';
@@ -24,9 +25,11 @@ const Homepage = () => {
                         <h1>Développeuse React en full-remote</h1>
                         <div className="Logos">
                             ReactJS
-                            <img className="LogoReact" src={ReactImg} alt="Logo ReactJS" />
-                            | Node
-                            <img className="LogoNode" src={Node} alt="Logo NodeJS" />
+                            <img src={ReactImg} alt="Logo ReactJS" />
+                            | NextJS
+                            <img src={NextJS} alt="Logo NextJS" />
+                            | NodeJS
+                            <img src={Node} alt="Logo NodeJS" />
                         </div>
                     </div>
                     <div className="ContainerText">

@@ -50,12 +50,10 @@
 
             .Logos{
                 @include flex(null, center, center);
-                .LogoReact{
-                    margin-right: 5px;
-                }
                 img{
                     width: 33px;
                     margin-left: 5px;
+                    margin-right: 5px;
                 }
             }
         }

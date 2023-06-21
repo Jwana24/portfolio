@@ -5,15 +5,12 @@ import React from "react";
 import Navbar from '../Navbar/Navbar';
 import French from '../../images/french-flag.png';
 import English from '../../images/english-flag.png';
-import Photoshop from '../../images/photoshop.png';
-import Indesign from '../../images/indesign.png';
-import Illustrator from '../../images/illustrator.png';
 import Adobexd from '../../images/adobexd.png';
 import Zeplin from '../../images/zeplin.png';
+import Figma from '../../images/figma.png';
 import Language from '../../images/languages.png';
 import WebDesign from '../../images/web-design.png';
 import WebDev from '../../images/web-development.png';
-import VSC from '../../images/vsc.png';
 import SQL from '../../images/sql-server.png';
 import MySQL from '../../images/mysql.png';
 import JS from '../../images/javascript.png';
@@ -28,11 +25,11 @@ import Symfony from '../../images/symfony.png';
 import Bootstrap from '../../images/bootstrap.png';
 import Git from '../../images/git.png';
 import Linux from '../../images/linux.png';
-import Webstorm from '../../images/webstorm.png';
 import MaterialUI from '../../images/materialui.png';
 import Tailwind from '../../images/tailwindcss.png';
 import Formik from '../../images/formik.png';
 import ReactHookForm from '../../images/reactHookForm.png';
+import Jest from '../../images/jest.png';
 
 // scss
 import './Skills.scss';
@@ -64,7 +61,7 @@ const Skills = () => {
                                 <div className="Front">
                                     <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" title="React" />
                                     <img src={Redux} className="ImgMediumSmall" alt="Logo Redux" title="Redux" />
-                                    <img src={Next} className="ImgLarge" alt="Logo Next" title="NextJS" />
+                                    <img src={Next} className="ImgMediumSmall" alt="Logo Next" title="NextJS" />
                                     <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
                                 </div>
                                 <p>Ce que je connais en + :</p>
@@ -72,17 +69,10 @@ const Skills = () => {
                                     <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
                                     <img src={Formik} className="ImgExtraSmall" alt="Logo Formik" title="Formik" />
                                     <img src={ReactHookForm} className="ImgExtraSmall" alt="Logo React Hook Form" title="React Hook Form" />
-                                    <img src={Tailwind} className="ImgLarge" alt="Logo TailwindCSS" title="TailwindCSS" />
+                                    <img src={Jest} className="ImgExtraSmall" alt="Logo Jest" title="Jest" />
+                                    <img src={Tailwind} className="ImgExtraSmall" alt="Logo TailwindCSS" title="TailwindCSS" />
                                     <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" title="MaterialUI" />
                                     <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" title="Bootstrap" />
-                                </div>
-                            </div>
-    
-                            <div>
-                                <h3>Éditeurs</h3>
-                                <div>
-                                    <img src={VSC} className="ImgMedium" alt="Logo Visual Studio Code" title="Visual Studio Code" />
-                                    <img src={Webstorm} className="ImgMedium" alt="Logo Webstorm" title="Webstorm" />
                                 </div>
                             </div>
 
@@ -132,11 +122,9 @@ const Skills = () => {
                         </div>
                         <div className="Design Card">
                             <h2>Web Design</h2>
-                            <img src={Photoshop} className="ImgMediumSmall" alt="Logo Photoshop" title="Photoshop" />
-                            <img src={Indesign} className="ImgMediumSmall" alt="Logo Indesign" title="Indesign" />
-                            <img src={Illustrator} className="ImgMediumSmall" alt="Logo Illustrator" title="Illustrator" />
                             <img src={Adobexd} className="ImgMediumSmall" alt="Logo AdobeXD" title="AdobeXD" />
                             <img src={Zeplin} className="ImgMediumSmall" alt="Logo Zeplin" title="Zeplin" />
+                            <img src={Figma} className="ImgExtraSmall" alt="Logo Figma" title="Figma" />
                             <div className="BulletImg">
                                 <img src={WebDesign} alt="Icon web design" />
                             </div>
