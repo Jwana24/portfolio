@@ -1,5 +1,6 @@
 // --- VARIABLES --- //
 $main-color: #6a5e6e;
+$dark-main-color: #363038;
 $light-grey: #eaeaea;
 $lighter-grey: #b2bec3;
 $darker-grey: #2d3436;
@@ -214,4 +215,51 @@ h4{
 }
 .ImgExtraLarge{
     width: 100px;
+}
+
+.ButtonCustom{
+    padding: 13px 16px;
+    border: solid transparent;
+    @include radius(16px);
+    border-width: 0 0 4px;
+    background-color: $dark-main-color;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+    outline: none;
+    overflow: visible;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: -4px;
+        z-index: -1;
+        background-clip: padding-box;
+        background-color: $main-color;
+        border: solid transparent;
+        @include radius(16px);
+        border-width: 0 0 4px;
+    }
+    &:focus{
+        user-select: auto;
+    }
+    &:hover:not(:disabled) {
+        @include filter(brightness(1.1));
+    }
+    &:disabled {
+        cursor: auto;
+    }
+    &:active {
+        border-width: 4px 0 0;
+        background: none;
+    }
 }

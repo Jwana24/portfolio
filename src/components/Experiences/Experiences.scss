@@ -8,6 +8,16 @@
             margin-top: 80px;
         }
         .Container{
+            .ContainerButtons{
+                button{
+                    &:first-of-type{
+                        margin-right: 10px;
+                    }
+                    margin-bottom: 45px;
+                }
+
+            }
+
             .Dev,
             .Communication{
                 h2{
@@ -16,7 +26,7 @@
             }
             .Dev{
                 .BulletImg{
-                    top: 125px;
+                    top: 205px;
                     background-color: $deep_purple;
                 }
 
@@ -31,7 +41,10 @@
                     }
                     p{
                         margin-bottom: 5px;
-                        &.Worktime{
+                        &:first-of-type{
+                            margin-bottom: 15px;
+                        }
+                        &.SmallText{
                             font-size: 13px;
                         }
                     }
