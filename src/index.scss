@@ -9,6 +9,9 @@ $orange: #fa983a;
 $blue: #2e86de;
 $light-blue: #7ed6df;
 $deep_purple: #30336b;
+$purple: #3e4289;
+$purple-light: #575cc2;
+$purple-lighter: #878cf7;
 $green: #6ab04c;
 
 // --- MIXINS --- //
@@ -28,6 +31,20 @@ $green: #6ab04c;
 @mixin filter($type) {
     filter: $type();
     -webkit-filter: $type();
+}
+@mixin transition($type, $value) {
+    transition: $type $value;
+    -webkit-transition: $type $value;
+    -moz-transition: $type $value;
+    -ms-transition: $type $value;
+    -o-transition: $type $value;
+}
+@mixin transform($type) {
+    transform: $type();
+    -webkit-transform: $type();
+    -moz-transform: $type();
+    -ms-transform: $type();
+    -o-transform: $type();
 }
 
 // --- FONTS --- //
@@ -138,6 +155,7 @@ h4{
     }
 }
 .Card{
+    position: relative;
     width: 100%;
     margin-top: 70px;
     padding: 60px 15px;
@@ -172,7 +190,6 @@ h4{
 
 .ContainerType{
     @include flex(column, null, center);
-    position: relative;
 
     h1{
         text-align: center;

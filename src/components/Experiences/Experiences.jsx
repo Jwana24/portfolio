@@ -31,6 +31,17 @@ import SoireeFrisson from "../../images/com/soiree-frisson.jpg";
 import BalTrad from "../../images/com/bal-trad.jpg";
 import ConcertLeonid from "../../images/com/concert-leonid.jpg";
 
+// --- Dev front --- //
+import Front from "../../images/frontend.png";
+import Github from "../../images/github.png";
+import Portfolio from "../../images/projets-perso/portfolio.png";
+
+// --- Dev back --- //
+import Back from "../../images/backend.png";
+
+// --- Dev fullstack --- //
+import FullS from "../../images/fullstack.png";
+
 // scss
 import './Experiences.scss';
 
@@ -59,7 +70,97 @@ const Experiences = () => {
                     </div>
                     {persoBool && (
                       // TODO: add personals projects here
-                      <p>Test projets persos ici !</p>
+                      <>
+                            <h1>Projets personnels significatifs</h1>
+                            <div className="Dev DevFront Card">
+                                <h2>Développement frontend</h2>
+                                <div className="BulletImg">
+                                    <img src={Front} alt="Frontend icon" />
+                                </div>
+          
+                                <div className="ContainerDevReact">
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>POK React-Hook-Form</h3>
+                                            <a href="https://github.com/Jwana24/pok-rhf_controller" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : React-Hook-Form, Yup</p>
+                                        <h4>Créé le 17 Juillet 2023</h4>
+                                        <p>👉🏻 Librairie de gestion de formulaires React-Hook-Form, librairie de validation de formulaires Yup.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Un pok pour apprendre à mettre en place RHF ainsi que Yup et notamment avec le composant Controller.
+                                            </span>
+                                        </p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>Pet Care</h3>
+                                            <a href="https://github.com/Jwana24/pet_care_front" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : NextJS, TypeScript, Tailwind, Eslint, react-toastify, Yup</p>
+                                        <h4>Créé le 02 Avril 2023</h4>
+                                        <p>👉🏻 Application de gestion de carnet de santé animalier avec inscription et connexion utilisateur, crud de carnet de santé, crud d’informations utilisateur.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Projet pour apprendre NextJS v13 et Tailwind, avec une bonne utilisation de TypeScript.
+                                            </span>
+                                        </p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>Portfolio ReactJS</h3>
+                                            <a href="https://github.com/Jwana24/portfolio" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : ReactJS, JavaScript, react-router, react-router-dom, SCSS</p>
+                                        <h4>Refonte en React le 25 Février 2023</h4>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="Dev DevFullstack Card">
+                                <h2>Développement fullstack</h2>
+                                <div className="BulletImg">
+                                    <img src={FullS} alt="Fullstack icon" />
+                                </div>
+                
+                                <div>
+                                    <h3>En formation et dans le cadre professionnel (Photoshop / Illustrator / InDesign)</h3>
+                                    <h4>2015 à 2017</h4>
+                                    
+                                </div>
+                            </div>
+
+                            <div className="Dev DevBack Card">
+                                <h2>Développement backend</h2>
+                                <div className="BulletImg">
+                                    <img src={Back} alt="Backend icon" />
+                                </div>
+                
+                                <div>
+                                    <h3>En formation et dans le cadre professionnel (Photoshop / Illustrator / InDesign)</h3>
+                                    <h4>2015 à 2017</h4>
+                                    
+                                </div>
+                            </div>
+                        </>
                     )}
 
                     {proBool && (
