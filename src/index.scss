@@ -242,7 +242,7 @@ h4{
     background-color: $dark-main-color;
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     vertical-align: middle;
     outline: none;
@@ -278,5 +278,9 @@ h4{
     &:active {
         border-width: 4px 0 0;
         background: none;
+    }
+
+    @media screen and (min-width: 780px) {
+        font-size: 18px;
     }
 }

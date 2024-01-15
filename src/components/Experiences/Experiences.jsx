@@ -141,10 +141,176 @@ const Experiences = () => {
                                     <img src={FullS} alt="Fullstack icon" />
                                 </div>
                 
-                                <div>
-                                    <h3>En formation et dans le cadre professionnel (Photoshop / Illustrator / InDesign)</h3>
-                                    <h4>2015 à 2017</h4>
-                                    
+                                <div className="ContainerDevFullstack">
+                                    <div>
+                                        <div>
+                                            <h3>My library</h3>
+                                        </div>
+                                        <h4>Créé le 03 Août 2023</h4>
+                                        <p>👉🏻 Application de gestion de bibliothèque personnelles : livres, films, musiques, pour mettre en place des filtres
+                                            de recherche spécifiques, aussi bien front que back.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                        <div className="ContainerProjectName">
+                                            <h3>My library front</h3>
+                                            <a href="https://github.com/Jwana24/my_library_front" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : ReactJS, ViteJS, react-router-dom, TypeScript, SCSS, Eslint, Axios, MaterialUI</p>
+                                        <p>👉🏻 Crud pour chaque type (livre / film / musique) ainsi que pour les genres (romans, mangas, fantastique, science-fiction,
+                                                pop, rap, rock, etc.). Filtres sur les genres, les statuts (en cours de lecture, visionné, à acheter, etc.) et recherche générale.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Bonne utilisation de MaterialUI et gestion de filtres côté front.
+                                            </span>
+                                        </p>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>My library back</h3>
+                                            <a href="https://github.com/Jwana24/my_library_back" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : NodeJS, ExpressJS, TypeORM, TypeScript, MySQL, Postman</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Première utilisation d’un ORM, mise en place d'un modèle MVC et gestion de filtres côté back.
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <h3>Recipe weblist</h3>
+                                        </div>
+                                        <h4>Créé le 12 Juillet 2021</h4>
+                                        <p>👉🏻 Application de gestion de recettes de cuisine avec utilisation de WYSIWYG.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                        <div className="ContainerProjectName">
+                                            <h3>Recipe weblist front</h3>
+                                            <a href="https://github.com/Jwana24/recipe-weblist-front" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : ReactJS, react-router, react-router-dom, JavaScript, SCSS, Axios, React-Hook-Form, DraftJS</p>
+                                        <p>👉🏻 Crud des recettes de cuisine.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Apprendre à mettre en place et utiliser une librairie de WYSIWYG et utilisation d’une librairie de gestion de formulaires.
+                                            </span>
+                                        </p>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>Recipe weblist back</h3>
+                                            <a href="https://github.com/Jwana24/recipe-weblist-back" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : NodeJS, JavaScript, ExpressJS, MySQL, Postman</p>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <h3>Piggy bank</h3>
+                                        </div>
+                                        <h4>Créé le 08 Février 2021</h4>
+                                        <p>👉🏻 Application mobile de gestion et suivi de compte bancaire : possibilité d’épargne et de dépenses, affichage du type et de la date pour chacun.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                        <div className="ContainerProjectName">
+                                            <h3>Piggy bank front</h3>
+                                            <a href="https://github.com/Jwana24/tirelire-front" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : React Native, Expo, Axios, react-hook-form, MomentJS</p>
+                                        <p>👉🏻 Crud des dépenses variables et crud des dépenses fixes.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Apprendre à mettre en place un projet sous React Native.
+                                            </span>
+                                        </p>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>Piggy bank back</h3>
+                                            <a href="https://github.com/Jwana24/tirelire-back" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : NodeJS, JavaScript, ExpressJS, MySQL, Postman</p>
+                                    </div>
+
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>Projet afpa 2019 (lesnacs) v1</h3>
+                                            <a href="https://github.com/Jwana24/projet_afpa_2019" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <h4>Créé le 19 Janvier 2019</h4>
+                                        <p>👉🏻 Application réalisée dans le cadre de ma 2e formation. Site d’informations concernant les animaux de compagnie avec des articles et un forum.
+                                            Quelques fonctionnalités importantes : Possibilité de mettre des commentaires, des réponses et des likes aux commentaires, version administrateur et traduction anglaise.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>Projet afpa 2019 (lesnacs) front</h3>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : JavaScript, Twig, CKEditor, Algolia, Bootstrap</p>
+                                        <p>👉🏻 Application front réalisée avec l'outil de template Twig et une recherche générale gérée grâce à l'outil Algolia.</p>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>Projet afpa 2019 (lesnacs) back</h3>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : PHP 7 et Symfony 4, MySQL</p>
+                                        <p>👉🏻 Application réalisée avec le framework Symfony 4 et utilisation de son ORM Doctrine.</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Apprendre à mettre en place un projet (côté back) avec un framework PHP, dernière version.
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>lesnacs v2</h3>
+                                            <a href="https://github.com/Jwana24/lesnacs" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <h4>Créé le 18 Juin 2019</h4>
+                                        <p>👉🏻 La même application que celle vu précédemment. C'est ce projet en PHP natif qui a été présenté à un jury pour ma certification de développement.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>lesnacs front</h3>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : JavaScript, QuillJS, CSS, Bootstrap</p>
+                                        <p>
+                                            💡
+                                            <span className="ProjectDesc">
+                                                Changement d'outil de WYSIWYG pour un outil plus performant et plus utilisé que CKEditor.
+                                            </span>
+                                        </p>
+
+                                        <div className="ContainerProjectName">
+                                            <h3>lesnacs back</h3>
+                                        </div>
+                                        <p>🛠️ Outils et technologies : PHP 7, PHPMailer, AltoRouter, MySQL</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -154,10 +320,21 @@ const Experiences = () => {
                                     <img src={Back} alt="Backend icon" />
                                 </div>
                 
-                                <div>
-                                    <h3>En formation et dans le cadre professionnel (Photoshop / Illustrator / InDesign)</h3>
-                                    <h4>2015 à 2017</h4>
-                                    
+                                <div className="ContainerDevBack">
+                                    <div>
+                                        <div className="ContainerProjectName">
+                                            <h3>projetBibliothequeCertif</h3>
+                                            <a href="https://github.com/Jwana24/projetBibliothequeCertif" target="_blank">
+                                                <img className="Github" src={Github} alt="Github" />
+                                            </a>
+                                        </div>
+                                        <h4>Créé le 30 Mai 2018</h4>
+                                        <p>👉🏻 Application réalisée dans le cadre de ma première formation de reconversion dans le domaine du développement.
+                                            Gestion de bibliothèque municipale avec crud de livres, crud de membres, crud de familles et sur chaque un filtre de recherche. Il y a également une gestion de temps d’emprunt des livres.</p>
+                                        <div className="Particeep">
+                                            <ZoomedImage src={Portfolio} alt="Website Portfolio" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </>

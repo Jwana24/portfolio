@@ -10,10 +10,19 @@
         .Container{
             .ContainerButtons{
                 button{
+                    margin-bottom: 12px;
                     &:first-of-type{
                         margin-right: 10px;
                     }
-                    margin-bottom: 45px;
+                    &:last-of-type{
+                        margin-bottom: 45px;
+                    }
+                    @media screen and (min-width: 780px) {
+                        margin-bottom: 45px;
+                        &:last-of-type{
+                            margin-bottom: 45px;
+                        }
+                    }
                 }
 
             }
@@ -27,7 +36,15 @@
                     color: $deep_purple;
                 }
 
-                .ContainerDevReact{
+                .ContainerDevFullstack{
+                    .ContainerProjectName{
+                        margin-top: 15px;
+                    }
+                }
+
+                .ContainerDevReact,
+                .ContainerDevFullstack,
+                .ContainerDevBack{
                     h3{
                         margin-bottom: 15px;
                     }
@@ -50,7 +67,6 @@
                         }
                     }
                     .ContainerProjectName{
-                        display: flex;
                         @include flex(null, center, null);
                         margin-bottom: 15px;
                         h3{
@@ -69,6 +85,10 @@
                                 object-fit: contain;
                                 width: 100%;
                                 height: 100%;
+                            }
+                            border-bottom: 1px solid black;
+                            @media screen and (min-width: 1025px) {
+                                border-bottom: none;
                             }
                         }
                     }
