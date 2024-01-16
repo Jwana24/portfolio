@@ -103,23 +103,31 @@
                     }
                 }
 
+                .ProjectsPerso,
                 .Integration,
                 .Dydu,
                 .Particeep{
+                    > div{
+                        width: 60%;
+                        @media screen and (min-width: 768px) {
+                            width: initial;
+                        }
+                    }
                     @include flex(null, null, center);
                     flex-wrap: wrap;
                     @media screen and (min-width: 780px) {
                         @include flex(null, null, flex-start);
                     }
                     img{
-                        width: auto;
-                        height: 130px;
-                        margin-right: 8px;
+                        width: 100%;
+                        height: auto;
                         padding: 1px;
                         border: 1px solid $light-grey;
                         @include radius(3px);
-                        @media screen and (min-width: 780px) {
+                        @media screen and (min-width: 768px) {
+                            width: auto;
                             height: 155px;
+                            margin-right: 8px;
                         }
                     }
                 }
