@@ -93,7 +93,7 @@ const Experiences = () => {
                 <div className="Container ContainerType">
                     <div className="ContainerButtons">
                         <button className="ButtonCustom" onClick={handleClickPerso}>🏠 Projets personnels</button>
-                        <button className="ButtonCustom" onClick={handleClickPro}>🏢 Expériences professionelles</button>
+                        <button className="ButtonCustom" onClick={handleClickPro}>🏢 Expériences professionnelles</button>
                     </div>
                     {persoBool && (
                         <>
@@ -107,8 +107,8 @@ const Experiences = () => {
                                 <div className="ContainerDevReact">
                                     <div>
                                         <div className="ContainerProjectName">
-                                            <h3>POK React-Hook-Form</h3>
-                                            <a href="https://github.com/Jwana24/pok-rhf_controller" target="_blank" rel="noreferrer">
+                                            <h3>POC React-Hook-Form</h3>
+                                            <a href="https://github.com/Jwana24/poc-rhf_controller" target="_blank" rel="noreferrer">
                                                 <img className="Github" src={Github} alt="Github" />
                                             </a>
                                         </div>
@@ -118,7 +118,7 @@ const Experiences = () => {
                                         <p>
                                             💡
                                             <span className="ProjectDesc">
-                                                Un pok pour apprendre à mettre en place RHF notamment avec le composant Controller et de la validation des inputs avec Yup.
+                                                Un POC pour apprendre à mettre en place RHF notamment avec le composant Controller et de la validation des inputs avec Yup.
                                             </span>
                                         </p>
                                         <div className="ProjectsPerso">
@@ -386,7 +386,7 @@ const Experiences = () => {
 
                     {proBool && (
                         <>
-                            <h1>Expériences professionelles</h1>
+                            <h1>Expériences professionnelles</h1>
                             <div className="Dev Card">
                                 <h2>Développement</h2>
                                 <div className="BulletImg">
