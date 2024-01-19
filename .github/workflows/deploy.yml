@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_KEY }}
           source: "build/*"
-          target: "~/${{ env.WEBSITE_URL }}"
+          target: "~/${{ vars.WEBSITE_URL }}"
