@@ -1,0 +1,32 @@
+name: Deploy on server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy on server
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      -
+        name: Build
+        run: npm run build
+      -
+        name: Copy Build files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_KEY }}
+          source: "build/*"
+          target: "~/${{ env.WEBSITE_URL }}"
