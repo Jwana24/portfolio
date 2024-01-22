@@ -158,6 +158,12 @@ const Experiences = () => {
                                         </div>
                                         <p>🛠️ Outils et technologies : ReactJS, JavaScript, react-router, react-router-dom, SCSS</p>
                                         <h4>Refonte en React le 25 Février 2023</h4>
+                                        <p>
+                                            🚀
+                                            <span className="ProjectDesc">
+                                                Auto déploiement du projet avec Github Action.
+                                            </span>
+                                        </p>
                                         <div className="ProjectsPerso">
                                             <ZoomedImage src={Portfolio} alt="Website Portfolio" />
                                         </div>
@@ -396,7 +402,8 @@ const Experiences = () => {
                                 <div className="ContainerDevReact">
                                     <div>
                                         <h3>Développement React</h3>
-                                        <p>🛠️ Outils et technologies : Redux / Typescript / Webpack / Styled component / JSS / MaterialUI / Formik / React Hook Form / Jest</p>
+                                        <p>🛠️ Outils et technologies : ReactJS, Typescript, JavaScript, Redux, redux-toolkit, JSS, MaterialUI, Formik, Yup, Jest, i18next, Axios,
+                                            Eslint, Jenkins, react-toastify, react-router, react-router-dom, BigNumberJS, Swagger</p>
                                         <h4>Particeep - septembre 2022 à mai 2023</h4>
                                         <p>
                                             J'ai réalisé principalement du bug fix sur le nouveau design en React, sur le front office et le back office du projet qui concerne des
@@ -407,7 +414,9 @@ const Experiences = () => {
                                             <ZoomedImage src={Particeep} alt="Website Particeep" />
                                             <ZoomedImage src={Finstore} alt="Finstore Particeep" />
                                         </div>
-            
+                                        
+                                        <p>🛠️ Outils et technologies : ReactJS, Redux, redux-saga, JavaScript, TypeScript, Webpack, Styled component, JSS, SCSS, React Hook Form, Yup,
+                                            i18next, Axios, Eslint, Prettier, react-router, react-router-dom, Swagger</p>
                                         <h4>Dydu - juillet 2021 à juillet 2022</h4>
                                         <p>
                                             J'ai réalisé des fonctionnalités et des bugs fix sur différentes chatbox (V1 en Angular et V2 en React), ainsi que sur l'outil de gestion
@@ -422,7 +431,7 @@ const Experiences = () => {
                                     </div>
         
                                     <h3>Intégration et développement PHP</h3>
-                                    <p>🛠️ Outils et technologies : Bolt / Prestashop / Symfony / Twig / JavaScript / SCSS</p>
+                                    <p>🛠️ Outils et technologies : Bolt, Prestashop, Symfony, Twig, JavaScript, SCSS, Filezilla, Bootstrap, DataTables, MomentJS</p>
                                     <h4>Definima - août 2020 à août 2021</h4>
                                     <p className="SmallText">👤 Travail en autonomie sur les sites : Iming, Central Sono, Symbiose Club.</p>
                                     <p className="SmallText">
