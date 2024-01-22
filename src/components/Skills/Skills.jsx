@@ -18,6 +18,8 @@ import TS from '../../images/typescript.png';
 import PHP from '../../images/php.png';
 import Next from '../../images/nextjs.png';
 import Node from '../../images/node.png';
+import Postman from '../../images/postman.png';
+import TypeORM from '../../images/typeorm.png';
 import ReactImg from '../../images/react.png';
 import Redux from '../../images/redux.png';
 import Express from '../../images/express.png';
@@ -30,6 +32,12 @@ import Tailwind from '../../images/tailwindcss.png';
 import Formik from '../../images/formik.png';
 import ReactHookForm from '../../images/reactHookForm.png';
 import Jest from '../../images/jest.png';
+import i18n from '../../images/i18n.png';
+import Eslint from '../../images/eslint.png';
+import Axios from '../../images/axios.png';
+import Swagger from '../../images/swagger.png';
+import StyledComponent from '../../images/styled-component.png';
+import Expo from '../../images/expo.png';
 
 // scss
 import './Skills.scss';
@@ -50,8 +58,7 @@ const Skills = () => {
                                     <img src={JS} className="ImgMedium" alt="Logo JavaScript" title="JavaScript" />
                                     <img src={TS} className="ImgMedium" alt="Logo TypeScript" title="TypeScript" />
                                 </div>
-                                <p>Ce que je connais en + :</p>
-                                <div>
+                                <div className="KnownBack">
                                     <img src={PHP} className="ImgSmall" alt="Logo PHP" title="PHP" />
                                 </div>
                             </div>
@@ -62,17 +69,20 @@ const Skills = () => {
                                     <img src={ReactImg} className="ImgMedium" alt="Logo ReactJS" title="React" />
                                     <img src={Redux} className="ImgMediumSmall" alt="Logo Redux" title="Redux" />
                                     <img src={Next} className="ImgMediumSmall" alt="Logo Next" title="NextJS" />
-                                    <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
+                                    <img src={MaterialUI} className="ImgMedium" alt="Logo MaterialUI" title="MaterialUI" />
+                                    <img src={Formik} className="ImgMediumSmall" alt="Logo Formik" title="Formik" />
+                                    <img src={ReactHookForm} className="ImgMediumSmall" alt="Logo React Hook Form" title="React Hook Form" />
+                                    <img src={Jest} className="ImgMediumSmall" alt="Logo Jest" title="Jest" />
+                                    <img src={i18n} className="ImgMediumSmall" alt="Logo i18next" title="i18next" />
+                                    <img src={Eslint} className="ImgMediumSmall" alt="Logo Eslint" title="Eslint" />
+                                    <img src={Axios} className="ImgExtraLarge" alt="Logo Axios" />
+                                    <img src={Swagger} className="ImgMediumSmall" alt="Logo Swagger" title="Swagger" />
                                 </div>
-                                <p>Ce que je connais en + :</p>
                                 <div className="KnownFront">
-                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
-                                    <img src={Formik} className="ImgExtraSmall" alt="Logo Formik" title="Formik" />
-                                    <img src={ReactHookForm} className="ImgExtraSmall" alt="Logo React Hook Form" title="React Hook Form" />
-                                    <img src={Jest} className="ImgExtraSmall" alt="Logo Jest" title="Jest" />
                                     <img src={Tailwind} className="ImgExtraSmall" alt="Logo TailwindCSS" title="TailwindCSS" />
-                                    <img src={MaterialUI} className="ImgExtraSmall" alt="Logo MaterialUI" title="MaterialUI" />
                                     <img src={Bootstrap} className="ImgExtraSmall" alt="Logo Bootstrap" title="Bootstrap" />
+                                    <img src={StyledComponent} className="ImgMediumSmall" alt="Logo StyledComponent" title="Styled-components" />
+                                    <img src={Expo} className="ImgExtraSmall" alt="Logo Expo" title="Expo" />
                                 </div>
                             </div>
 
@@ -88,6 +98,12 @@ const Skills = () => {
                                 <h3>Environnement Back-end</h3>
                                 <div className="Back">
                                     <img src={Node} className="ImgLarge" alt="Logo NodeJS" />
+                                    <img src={Express} className="ImgExtraLarge" alt="Logo Express" />
+                                    <img src={Postman} className="ImgMediumSmall" alt="Logo Postman" title="Postman" />
+                                </div>
+                                <div className="KnownBack">
+                                    <img src={Symfony} className="ImgExtraSmall" alt="Logo Symfony" title="Symfony" />
+                                    <img src={TypeORM} className="ImgSmall" alt="Logo TypeORM" title="TypeORM" />
                                 </div>
                             </div>
 

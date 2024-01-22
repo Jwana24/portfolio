@@ -20,20 +20,26 @@
                     > div{
                         &.ContainerGrid{
                             > div{
-                                width: 225px;
+                                @include flex(column, null, null);
+                                width: 100%;
+                                @media screen and (min-width: 400px) {
+                                    width: 225px;
+                                }
                             }
                         }
                     }
                     .SGBD{
                         @include flex(null, center, null);
                     }
-                    .Lang, .Back, .Front{
-                        height: 50px;
-                    }
-                    .Front, .KnownFront{
+                    .Front, .KnownFront, .KnownBack{
                         @include flex(null, center, null);
-                        img:not(:last-child){
-                            margin-right: 4px;
+                        flex-wrap: wrap;
+                        margin-top: 15px;
+                        img{
+                            margin-bottom: 10px;
+                            &:not(:last-child){
+                                margin-right: 4px;
+                            }
                         }
                     }
                     h2{
