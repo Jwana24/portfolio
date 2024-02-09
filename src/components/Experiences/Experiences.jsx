@@ -36,6 +36,7 @@ import Front from "../../images/frontend.png";
 import Github from "../../images/github.png";
 import Portfolio from "../../images/projets-perso/portfolio.png";
 import Pok from "../../images/projets-perso/pok-rhf.png";
+import Home from "../../images/projets-perso/petcare/home.png";
 import Connection from "../../images/projets-perso/petcare/connexion.png";
 import Toast from "../../images/projets-perso/petcare/toastify.png";
 import Account from "../../images/projets-perso/petcare/compte.png";
@@ -142,11 +143,12 @@ const Experiences = () => {
                                             </span>
                                         </p>
                                         <div className="ProjectsPerso">
+                                            <ZoomedImage src={Home} alt="Homepage on website Petcare" />
                                             <ZoomedImage src={Connection} alt="Connection on website Petcare" />
-                                            <ZoomedImage src={Toast} alt="Connection on website Petcare" />
-                                            <ZoomedImage src={Account} alt="Connection on website Petcare" />
-                                            <ZoomedImage src={List} alt="Connection on website Petcare" />
-                                            <ZoomedImage src={Edit} alt="Connection on website Petcare" />
+                                            <ZoomedImage src={Toast} alt="Toast message on website Petcare" />
+                                            <ZoomedImage src={Account} alt="Account homepage on website Petcare" />
+                                            <ZoomedImage src={List} alt="List of medical reports on website Petcare" />
+                                            <ZoomedImage src={Edit} alt="Edit form of medical report on website Petcare" />
                                         </div>
                                     </div>
                                     <div>
