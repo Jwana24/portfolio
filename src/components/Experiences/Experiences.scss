@@ -131,6 +131,60 @@
                         }
                     }
                 }
+                &.DevTop{
+                    .BulletImg{
+                        background-color: white;
+                        img{
+                            width: 70px;
+                        }
+                    }
+                    .ContainerAllTops{
+                        @include flex(null, null, null);
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        @media screen and (min-width: 768px) {
+                            justify-content: initial;
+                        }
+                        .TopContainer{
+                            position: relative;
+                            width: 215px;
+                            height: 165px;
+                            margin-bottom: 30px;
+                            border: 1px solid $light-grey;
+                            @include radius(0 0 15px 15px);
+                            @media screen and (min-width: 768px) {
+                                &:not(:last-of-type){
+                                    margin-right: 20px;
+                                }
+                            }
+                            .TopContainerImg{
+                                width: 100%;
+                                height: 112px;
+                                @include radius(15px 15px 0 0);
+                                    border-bottom: 1px solid $light-grey;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            .TopContainerName{
+                                text-align: center;
+                                padding: 7px 0;
+                                font-weight: bold;
+                                font-size: 20px;
+                            }
+                            .Bookmark{
+                                position: absolute;
+                                right: 12px;
+                                img{
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
                 &.DevFront{
                     .BulletImg{
                         background-color: $purple;

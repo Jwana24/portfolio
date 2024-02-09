@@ -21,7 +21,7 @@ $green: #6ab04c;
     align-items: $align;
     justify-content: $justify;
 }
-@mixin radius($value) {
+@mixin radius($value...) {
     border-radius: $value;
     -webkit-border-radius: $value;
     -moz-border-radius: $value;

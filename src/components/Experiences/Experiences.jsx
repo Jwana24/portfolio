@@ -32,6 +32,8 @@ import BalTrad from "../../images/com/bal-trad.jpg";
 import ConcertLeonid from "../../images/com/concert-leonid.jpg";
 
 // --- Dev front --- //
+import Top from "../../images/projets-perso/design-top.png";
+import Bookmark from "../../images/projets-perso/bookmark.png";
 import Front from "../../images/frontend.png";
 import Github from "../../images/github.png";
 import Portfolio from "../../images/projets-perso/portfolio.png";
@@ -99,6 +101,39 @@ const Experiences = () => {
                     {persoBool && (
                         <>
                             <h1>Projets personnels significatifs</h1>
+
+                            <div className="Dev DevTop Card">
+                                <div className="BulletImg">
+                                    <img src={Top} alt="Top image" />
+                                </div>
+
+                                <div className="ContainerAllTops">
+                                    <div className="TopContainer">
+                                        <div className="TopContainerImg">
+                                            <img src={Home} alt="Homepage on website Petcare" />
+                                        </div>
+                                        <div className="TopContainerName">
+                                            <p>PetCare</p>
+                                        </div>
+                                        <div className="Bookmark">
+                                            <img src={Bookmark} alt="Bookmark icon" />
+                                        </div>
+                                    </div>
+                                    <div className="TopContainer">
+                                        <div className="TopContainerImg">
+                                            <img src={HomepageLibrary} alt="Homepage on website My Library" />
+                                        </div>
+                                        <div className="TopContainerName">
+                                            <p>Ma bibliothèque</p>
+                                        </div>
+                                        <div className="Bookmark">
+                                            <img src={Bookmark} alt="Bookmark icon" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
                             <div className="Dev DevFront Card">
                                 <h2>Développement frontend</h2>
                                 <div className="BulletImg">
