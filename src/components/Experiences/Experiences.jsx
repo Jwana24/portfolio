@@ -104,7 +104,7 @@ const Experiences = () => {
 
                             <div className="Dev DevTop Card">
                                 <div className="BulletImg">
-                                    <img src={Top} alt="Top image" />
+                                    <img src={Top} alt="Top icon" />
                                 </div>
 
                                 <div className="ContainerAllTops">
